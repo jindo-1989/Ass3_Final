@@ -1,0 +1,16 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-text {
+    display: none;
+  }
+  #nav-bar a:link,
+  a:visited {
+    margin: 10px;
+  }
+  /*  phan 4 */
+
+  .masonry-1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}

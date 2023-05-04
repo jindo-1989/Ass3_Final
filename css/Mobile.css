@@ -1,0 +1,18 @@
+@media only screen and (max-width: 767px) {
+  .banner-text {
+    display: none;
+  }
+  .menu {
+    flex-direction: column;
+    text-align: start;
+  }
+  .menu a {
+    border: none;
+  }
+  .menu a:nth-child(2) {
+    border-right: none;
+  }
+  .menu a:nth-child(5) {
+    border-right: none;
+  }
+}

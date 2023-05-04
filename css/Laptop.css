@@ -1,0 +1,277 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+.icon {
+  color: #0abde3;
+}
+
+/*  banner */
+
+.avatar-banner {
+  position: relative;
+  filter: brightness(50%);
+  object-fit: cover;
+  height: 400px;
+}
+.banner {
+  text-align: center;
+  position: absolute;
+  color: white;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner span {
+  color: #ddd;
+}
+
+/*menu */
+
+.private {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+}
+.menu a:nth-child(2) {
+  border-right: 1px solid #d1d1d1;
+}
+.menu a:nth-child(5) {
+  border-right: 1px solid #d1d1d1;
+}
+.menu a {
+  border-left: 1px solid #d1d1d1;
+}
+
+.menu a:hover {
+  background-color: orange;
+  color: white;
+  align-items: center;
+}
+
+/* phần 3 - mục tiêu nghề nghiệp và thông tin cá nhân */
+
+.target {
+  background-color: rgb(228, 223, 223);
+  padding: 40px 50px;
+}
+.infor {
+  background-color: rgb(202, 198, 198);
+  padding: 40px 30px;
+}
+.information {
+  list-style: none;
+}
+
+.infor span {
+  font-weight: bold;
+}
+.icon-ip {
+  padding: 20px 30px;
+}
+
+/* phần 4 -----------*/
+
+.box-border {
+  margin: 20px 10px;
+  border: 1px solid grey;
+  flex: 1;
+}
+.box-title {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px;
+}
+.box-icon {
+  font-size: 40px;
+}
+.job {
+  margin: 10px 0;
+}
+
+.job-text p {
+  padding: 3px;
+}
+.job-item::before {
+  content: "";
+  position: absolute;
+  background-color: #0abde3;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: -20px;
+  top: 10px;
+}
+/* phần 4 box kinh nghiệm */
+
+.exper,
+.education,
+.working {
+  grid-column: 1/-1;
+  margin-left: 15px;
+  position: relative;
+}
+
+.exper1,
+.educations,
+.workings {
+  position: relative;
+}
+
+.button {
+  background-color: #0abde3;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+/* -----phần 4 sở thích ------*/
+
+.interest {
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 20px;
+}
+.st-icon {
+  padding: 10px;
+}
+.st-icon p {
+  padding-top: 10px;
+}
+.st-icon i {
+  color: #0abde3;
+  font-weight: bold;
+  border: 2px solid #0abde3;
+  padding: 12px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* -----phần 4 ngôn ngữ và kỹ năng---- */
+
+.language div,
+.skill div {
+  padding: 10px;
+}
+.bright {
+  background-color: #0abde3;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.dark {
+  background-color: rgb(201, 195, 195);
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+/* -----phần 5 - chứng chỉ và giải thưởng------- */
+.grid-cer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
+}
+.img-cc {
+  width: 240px;
+  height: 200px;
+  margin-right: 20px;
+}
+.cer-content {
+  display: flex;
+  gap: 10px;
+}
+.section-title {
+  margin: 30px 0;
+}
+.cer-content h5 {
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+.cer-content2 {
+  padding-left: 20px;
+  border-left: 2px solid #d6c08d;
+}
+.cer-content3 {
+  padding-top: 20px;
+  border-top: 2px solid #d6c08d;
+  grid-column: 1/-1;
+}
+/* ---phần 6 - dự án --- */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+.pro-private {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d1d1d1;
+}
+.web-main {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-top: 1px solid #d1d1d1;
+}
+.web-details {
+  border-top: 1px solid #d1d1d1;
+  padding: 10px;
+}
+tr {
+  border-top: 1px solid #d1d1d1;
+}
+td {
+  border-top: 1px solid #d1d1d1;
+  padding: 20px;
+}
+td:first-child {
+  width: 50px;
+  vertical-align: top;
+  font-weight: bold;
+}
+/* ---phần  footer */
+
+.late {
+  text-align: center;
+}
+.late a {
+  justify-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+.late a:hover {
+  color: rgb(190, 69, 69);
+}
+
